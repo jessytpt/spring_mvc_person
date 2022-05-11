@@ -16,9 +16,15 @@ public class PersonaController {
 
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
-        Persona p = new Persona(1,"Jess");
+        Persona p = new Persona(2,"Jhony");
         repo.save(p);
         model.addAttribute("name", name);
+        return "greeting";
+    }
+
+    @GetMapping("/listar")
+    public String listar(Model model) {
+        model.addAttribute("personas", repo.findAll());
         return "greeting";
     }
 }
