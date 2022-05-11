@@ -21,6 +21,6 @@ public class ProyectPersonApplication  implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-	service.registrar("Sé imparable!");
+	//service.registrar("Sé imparable!");
 	}
 }

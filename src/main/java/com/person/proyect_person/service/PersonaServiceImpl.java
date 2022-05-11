@@ -9,11 +9,10 @@ import org.springframework.stereotype.Service;
 public class PersonaServiceImpl implements IPersonaService{
 
     @Autowired
-    @Qualifier("persona1")
     private IPersonaRepo repo;
 
-    @Override
+   /* @Override
     public void registrar(String nombre) {
         repo.registrar(nombre);
-    }
+    }*/
 }
